@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style scoped>
-.iconfont {
+.icon-container {
   font-size: 24px;
   color: #008c8c;
 }

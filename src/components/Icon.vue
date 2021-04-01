@@ -1,5 +1,6 @@
+// 图标组件
 <template>
-  <i class="iconfont" :class="fontClass"></i>
+  <i class="iconfont icon-container" :class="fontClass"></i>
 </template>
 
 <script>
@@ -30,6 +31,7 @@ export default {
     }
   },
   computed: {
+    // 图标类样式
     fontClass () {
       return classMap[this.type]
     }
