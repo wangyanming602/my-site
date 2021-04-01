@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import './styles/global.less'
 
 // 控制台给一些关键提示
 Vue.config.productionTip = false
