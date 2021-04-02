@@ -1,6 +1,6 @@
 # Avatar
 
-<img src="./Avatar/avatar.png" alt="image-20201130153821293" style="zoom:50%;" />
+<img src="./Avatar/avatar样式图.png" alt="avatar样式图.png" style="zoom:50%;" />
 
 ## 属性
 
@@ -11,7 +11,7 @@
 
 # Icon
 
-<img src="./Icon/icon.png" alt="image-20201130153927256" style="zoom:50%;" />
+<img src="./Icon/icon样式图.png" alt="icon样式图.png" style="zoom:50%;" />
 
 图标组件
 
@@ -25,11 +25,11 @@
 
 有效的图标类型：
 
-<img src="./Icon/Icon类型.jpg" alt="iShot2020-11-30下午03.47.09" style="zoom:33%;" />
+<img src="./Icon/Icon类型.jpg" alt="Icon类型.jpg" style="zoom:33%;" />
 
 # pager
 
-<img src="./Pager/Pager.png" style="zoom:50%;" />
+<img src="./Pager/Pager样式图.png" alt="Pager样式图.png" style="zoom:50%;" />
 
 ## 属性
 
@@ -46,5 +46,105 @@
 | ---------- | -------- | -------- | -------- |
 | pageChange | 页码变化 | 新的页码 | Number   |
 
+# Empty
+
+<img src="./Empty/empty样式图.png" alt="empty样式图.png" style="zoom:50%;" />
+
+该组件需要在外层容器中横向垂直居中
+
+## 属性
+
+| 属性名 | 含义       | 类型   | 必填 | 默认值   |
+| ------ | ---------- | ------ | ---- | -------- |
+| text   | 显示的文字 | String | 否   | "无数据" |
+
+# ImageLoader
+
+该组件可以实现一个渐进式图片
+
+![alt tag](./ImageLoader/imageLoader样式图.gif)
+
+## 属性
+
+| 属性名      | 含义                                         | 类型   | 必填 | 默认值 |
+| ----------- | -------------------------------------------- | ------ | ---- | ------ |
+| src         | 原始图片的路径                               | String | 是   | 无     |
+| placeholder | 原始图片加载完成前的占位图片                 | String | 是   | 无     |
+| duration    | 原始图片加载完成后，切换到原始图经过的毫秒数 | Number | 否   | 500    |
+
+## 事件
+
+| 事件名 | 含义                   | 事件参数 | 参数类型 |
+| ------ | ---------------------- | -------- | -------- |
+| load   | 原始图片加载完成后触发 | 无       | 无       |
+
+## 示例
+
+```html
+<ImageLoader 
+	src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?fit=crop&crop=entropy&w=3456&h=2304"
+  placeholder="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?w=100"
+/>
+```
 
 
+
+# Contact
+
+<img src="./Contact/contact样式图.gif" alt="contact样式图.gif" style="zoom:40%;" />
+
+该组件需要横向撑满容器，背景色透明
+
+> 1. 如何实现点击弹出QQ对话？
+>
+>    设置超链接为：tencent://message/?Menu=yes&uin=要对话的QQ号&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45
+>
+> 2. 如何实现点击弹出发送邮件？
+>
+>    设置超链接为：mailto:邮件地址
+
+# Menu
+
+<img src="./Menu/menu样式图.png" alt="menu样式图.png" style="zoom:33%;" />
+
+该组件需要横向撑满容器，背景色透明
+
+每个菜单的信息如下：
+
+> **首页**
+>
+> 链接地址：/
+>
+> 选中条件：路径等于 /
+>
+> **文章**
+>
+> 链接地址：/blog
+>
+> 选中条件：路径以`/blog`开头
+>
+> **关于我**
+>
+> 链接地址：/about
+>
+> 选中条件：路径等于`/about`
+>
+> **项目&效果**
+>
+> 链接地址：/project
+>
+> 选中条件：路径等于`/project`
+>
+> **留言板**
+>
+> 链接地址：/message
+>
+> 选中条件：路径等于`/message`
+
+# SiteAside
+
+<img src="./SiteAside/siteAside样式图.png" alt="siteAside样式图.png" style="zoom:33%;" />
+
+网站侧边栏
+
+宽度和高度撑满外层容器
